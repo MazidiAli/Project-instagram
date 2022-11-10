@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:background="#edd2d2">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_img"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/f" />
+
+                <TextView
+                    android:id="@+id/profile_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20sp"
+                    android:layout_toRightOf="@id/profile_img"
+                    android:text="name"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_more_vert_black_24dp" />
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="8dp">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_post"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_margin="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/f" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_post"
+                android:layout_alignParentLeft="true"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/icon3"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/img_post"
+                    android:layout_margin="8dp"
+                    android:layout_toRightOf="@id/icon2"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/ic_send_black_24dp" />
+
+                <ImageView
+                    android:id="@+id/icon2"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/img_post"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@id/icon_like"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/commenticon" />
+
+                <ImageView
+                    android:id="@+id/icon_like"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="false"
+                    android:layout_margin="8dp"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/btnlike" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/icon4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/img_post"
+                android:layout_alignParentRight="true"
+                android:layout_margin="8dp"
+                android:src="@drawable/btnbookmark" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
